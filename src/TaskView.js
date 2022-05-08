@@ -8,6 +8,11 @@ class TaskView extends React.Component {
     }
 
     componentDidMount = () => {
+        if(window.innerWidth < 760) {
+            this.setState({
+                mobile: window.innerWidth < 760
+            })
+        }
         window.addEventListener('resize', ()=>{
             this.setState({
                 mobile: window.innerWidth < 760
