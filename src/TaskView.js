@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from './Button';
+
 class TaskView extends React.Component {
 
     state = {
@@ -50,8 +52,7 @@ class TaskView extends React.Component {
                     <h5 className="card-title">{task.title}</h5>
                     <h6>ID: {task.id}</h6>
                     <h6 className="card-text">Type: {task.type}</h6>
-                    <button onClick={this.moveTaskForward} id={task.id}>Forward</button>
-                    <button onClick={this.moveTaskBackward} id={task.id}>Back</button>
+                    <Button moveTaskForward={this.moveTaskForward} moveTaskBackward={this.moveTaskBackward} task={task} />
                 </div>
             </div> : null
     }
