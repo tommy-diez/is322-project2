@@ -77,19 +77,19 @@ class TaskView extends React.Component {
                 </div> :
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-md-6 col-lg-3">
                         <h2>To Do</h2>
                         {this.props.tasks.map(task => this.generateCard(task, 0))}
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-6 col-lg-3">
                         <h2>In Progress</h2>
                         {this.props.tasks.map(task => this.generateCard(task, 1))}
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-6 col-lg-3">
                         <h2>Review</h2>
                         {this.props.tasks.map(task => this.generateCard(task, 2))}
                     </div>
-                    <div className="col-3">
+                    <div className="col-md-6 col-lg-3">
                         <h2>Done</h2>
                         {this.props.tasks.map(task => this.generateCard(task, 3))}
                     </div>
