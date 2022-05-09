@@ -1,5 +1,5 @@
-#IS322 Project 2
-##Hosted at: https://is322-project2.web.app
+# IS322 Project 2
+## Hosted at: https://is322-project2.web.app
 A task board in React for IS322 
 <hr> 
 
