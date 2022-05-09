@@ -1,3 +1,8 @@
+#IS322 Project 2
+##Hosted at: https://is322-project2.web.app
+A task board in React for IS322 
+<hr> 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
