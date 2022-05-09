@@ -36,9 +36,10 @@ class App extends React.Component {
     }
 
     render() {
-        return (
-            <TaskView tasks={this.state.tasks} updateTaskList={this.updateTaskList} />
-        )
+        if(this.state.tasks) {
+            return <TaskView tasks={this.state.tasks} updateTaskList={this.updateTaskList}/>
+        }
+        return <div>Loading...</div>
     }
 
 }
