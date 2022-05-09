@@ -25,13 +25,19 @@ class App extends React.Component {
         })
     }
 
+    updateTaskList = (newTasks) => {
+        this.setState({
+            tasks: newTasks
+        })
+    }
+
     componentDidMount() {
         this.getData();
     }
 
     render() {
         return (
-            <TaskView tasks={this.state.tasks}/>
+            <TaskView tasks={this.state.tasks} updateTaskList={this.updateTaskList} />
         )
     }
 
