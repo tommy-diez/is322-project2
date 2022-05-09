@@ -16,7 +16,7 @@ class App extends React.Component {
     getData = () => {
         axios({
             method: 'get',
-            url:'http://my-json-server.typicode.com/tommy-diez/JSONDB/tasks',
+            url:'https://my-json-server.typicode.com/tommy-diez/JSONDB/tasks',
         }).then((response) => {
             this.setState({tasks: response.data});
             console.log(response.data);
