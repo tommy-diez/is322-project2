@@ -5,23 +5,25 @@ class Button extends React.Component {
     determineButtons = (status) => {
         switch(status) {
             case(0):
-                return <button onClick={this.props.moveTaskForward} id={this.props.task.id}>Send to In Progress</button>;
+                return <button className="btn btn-outline-primary" onClick={this.props.moveTaskForward} id={this.props.task.id}>Send to In Progress</button>;
             case(1):
                 return (
                     <div>
-                        <button onClick={this.props.moveTaskBackward} id={this.props.task.id}>Send to To Do</button>
-                        <button onClick={this.props.moveTaskForward} id={this.props.task.id}>Send to Review</button>
+                        <button className="btn btn-outline-dark" onClick={this.props.moveTaskBackward} id={this.props.task.id}>Send to To Do</button>
+                        <br />
+                        <button className="btn btn-outline-primary" onClick={this.props.moveTaskForward} id={this.props.task.id}>Send to Review</button>
                     </div>
                 )
             case(2):
                 return (
                     <div>
-                        <button onClick={this.props.moveTaskBackward} id={this.props.task.id}>Send to In Progress</button>
-                        <button onClick={this.props.moveTaskForward} id={this.props.task.id}>Mark Done</button>
+                        <button className="btn btn-outline-dark" onClick={this.props.moveTaskBackward} id={this.props.task.id}>Send to In Progress</button>
+                        <br />
+                        <button className="btn btn-outline-primary" onClick={this.props.moveTaskForward} id={this.props.task.id}>Mark Done</button>
                     </div>
                 )
             case(3):
-                return <button onClick={this.props.moveTaskBackward} id={this.props.task.id}>Send to In Progress</button>
+                return <button className="btn btn-outline-dark" onClick={this.props.moveTaskBackward} id={this.props.task.id}>Send to Review</button>
             }
         }
 
